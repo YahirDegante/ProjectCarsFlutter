@@ -1,9 +1,9 @@
 class CarModel {
-  final String id;
-  final String marca;
-  final String cilindrada;
-  final String color;
-  final String modelo;
+  String id;
+  String? marca;
+  String? cilindrada;
+  String? color;
+  String? modelo;
 
   CarModel({
     required this.id,

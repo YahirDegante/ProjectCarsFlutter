@@ -9,7 +9,7 @@ class CarRepository {
 
   Future<void> createCar(CarModel car) async {
     final response = await http.post(
-      Uri.parse('$apiUrl/cars'),
+      Uri.parse('$apiUrl/createCar'),
       headers: <String, String>{
         'Content-Type': 'application/json; charset=UTF-8',
       },
@@ -38,7 +38,7 @@ class CarRepository {
 
   Future<void> updateCar(CarModel car) async {
     final response = await http.put(
-      Uri.parse('$apiUrl/cars/${car.id}'),
+      Uri.parse('$apiUrl/updateCar/${car.id}'),
       headers: <String, String>{
         'Content-Type': 'application/json; charset=UTF-8',
       },
